@@ -45,13 +45,8 @@ if sys.version < '3':
 else:
     def u(x):
         return x
-
-
-if os.getenv('HOWDOI_DISABLE_SSL'):  # Set http instead of https
-    SEARCH_URL = 'http://www.google.com/search?q=site:stackoverflow.com%20{0}'
-else:
-    SEARCH_URL = 'https://www.google.com/search?q=site:stackoverflow.com%20{0}'
-
+    
+SEARCH_URL = 'https://duckduckgo.com/?q=!so+{0}'
 
 USER_AGENTS = ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:11.0) Gecko/20100101 Firefox/11.0',
                'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko/20100 101 Firefox/22.0',
